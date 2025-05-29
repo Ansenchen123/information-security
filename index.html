@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>資訊安全宣導</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>資訊安全宣導網站</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">關於資安</a></li>
+        <li><a href="#threats">常見威脅</a></li>
+        <li><a href="#protection">防範方法</a></li>
+        <li><a href="#video">資安影片</a></li>
+        <li><a href="#game">小遊戲</a></li>
+        <li><a href="#phishing-trap">好東西</a></li>
+        <li><a href="#sources">資料來源</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="content-row">
+        <img src="images/password.png" alt="密碼保護示意圖" class="content-img" />
+        <div class="text-block">
+          <h2>關於資訊安全</h2>
+          <p>資訊安全（Information Security）是保護資料不被未授權存取、竄改或破壞的技術與實務。</p>
+          <p>核心原則包括機密性、完整性與可用性，是每位使用者都應具備的基本知識。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="threats">
+      <div class="content-row">
+        <img src="images/phishing.png" alt="釣魚攻擊示意圖" class="content-img" />
+        <div class="text-block">
+          <h2>常見資安威脅</h2>
+          <p><strong>釣魚信件：</strong> 假冒合法單位傳送連結或附件，誘導用戶洩漏帳密。</p>
+          <p><strong>勒索病毒：</strong> 鎖定檔案後要求贖金，常經由漏洞或信件附件散播。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="protection">
+      <div class="content-row">
+        <img src="images/protection.png" alt="資安防護示意圖" class="content-img" />
+        <div class="text-block">
+          <h2>資安防護方法</h2>
+          <ul>
+            <li>使用複雜且唯一的密碼，並啟用兩步驟驗證</li>
+            <li>定期更新作業系統與防毒軟體</li>
+            <li>不點擊不明來源的連結或附件</li>
+            <li>加強資安意識教育，預防社交工程</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="video">
+      <div class="content-row">
+        <iframe class="video-frame" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="資訊安全宣導影片" frameborder="0" allowfullscreen></iframe>
+        <div class="text-block">
+          <h2>資安宣導影片</h2>
+          <p>晉請見證，前有資安宣導影片</p>
+          <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">觀看原始影片</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="phishing-trap">
+      <div class="phishing-container">
+        <h2>釣魚連結</h2>
+        <button id="phishingBtn">不要按</button>
+      </div>
+    </section>
+
+    <section id="game">
+      <div class="game-container">
+        <h2>小遊戲：逃離資安漏洞！</h2>
+        <p>你是一位工程師，試著躲避迎面而來的資安漏洞！(按下空白鍵跳躍)。</p>
+        <div id="scoreDisplay">分數：0</div>
+        <div id="highScoreDisplay">最高分數：0</div>
+        <button id="startGameBtn">開始遊戲</button>
+        <canvas id="bugGame" width="600" height="200" style="display: none;"></canvas>
+      </div>
+    </section>
+
+
+
+
+    <section id="sources">
+      <div class="content-row">
+        <div class="text-block">
+          <h2>資料來源</h2>
+          <ul>
+            <li><a href="https://www.nccst.nat.gov.tw/" target="_blank">國家資通安全通報應變中心</a></li>
+            <li><a href="https://www.twcert.org.tw/" target="_blank">TWCERT/CC</a></li>
+            <li><a href="https://www.cisa.gov/" target="_blank">CISA（美國網路安全與基礎設施安全局）</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 資安宣導網站</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

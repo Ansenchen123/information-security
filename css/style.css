@@ -1,0 +1,155 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  background: white;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  scroll-margin-top: 80px; /* 解決錨點被 header 擋住的問題 */
+}
+
+.content-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.text-block {
+  flex: 1;
+}
+
+.content-img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.video-frame {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .content-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content-img,
+  .video-frame {
+    max-width: 80%;
+    align-self: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
+
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+#game {
+  scroll-margin-top: 80px;
+}
+
+.game-container {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#bugGame {
+  background-color: #eeeeee;
+  border: 2px solid #444;
+  border-radius: 6px;
+  margin: 1rem auto 0 auto;  /* ⬅️ 關鍵：左右自動置中 */
+  width: 100%;
+  max-width: 600px;
+  display: block;            /* 確保 canvas 以區塊元素呈現 */
+}
+
+.phishing-container {
+  background-color: #fff0f0;
+  border: 2px solid #cc0000;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  box-shadow: 0 0 5px rgba(200, 0, 0, 0.3);
+}
+
+#phishingBtn {
+  padding: 0.6rem 1.2rem;
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#phishingBtn:hover {
+  background-color: #990000;
+}
+
+
