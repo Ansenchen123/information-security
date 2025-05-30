@@ -163,16 +163,28 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
   #menu-toggle {
     display: block;
-    margin: 0 auto;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #003366;
+    cursor: pointer;
   }
 
   nav ul {
     display: none;
     flex-direction: column;
-    gap: 0.5rem;
+    background-color: #f0f0f0;
     padding: 1rem;
+    margin: 0;
   }
 
   nav ul.active {
