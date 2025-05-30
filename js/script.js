@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   // 平滑滾動
   const links = document.querySelectorAll("nav ul li a");
+  const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.querySelector("nav ul");
+
+  menuToggle?.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
   for (const link of links) {
     link.addEventListener("click", function (e) {
       e.preventDefault();
@@ -154,6 +160,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+  // 手機觸控支援（畫面點一下跳躍）
+  canvas.addEventListener("touchstart", () => {
+    if (isRunning && !engineer.jumping) {
+      engineer.dy = -20;
+      engineer.jumping = true;
+    }
+  });
+
 
   // 開始遊戲
   startBtn?.addEventListener("click", () => {
