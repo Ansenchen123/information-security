@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   menuToggle?.addEventListener("click", () => {
     navMenu.classList.toggle("active");
   });
+
   for (const link of links) {
     link.addEventListener("click", function (e) {
       e.preventDefault();

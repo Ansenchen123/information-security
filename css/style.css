@@ -168,6 +168,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    background-color: #003366;
   }
 
   #menu-toggle {
@@ -175,20 +176,28 @@ footer {
     font-size: 1.8rem;
     background: none;
     border: none;
-    color: #003366;
+    color: white; /* 改為白色才看得見 */
     cursor: pointer;
   }
 
   nav ul {
     display: none;
     flex-direction: column;
-    background-color: #f0f0f0;
+    background-color: #eeeeee;
     padding: 1rem;
     margin: 0;
+    border-radius: 6px;
   }
 
   nav ul.active {
     display: flex;
+  }
+
+  nav ul li a {
+    color: #222;  /* 避免預設白色被覆蓋 */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 0;
   }
 }
 
