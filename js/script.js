@@ -14,7 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetId = this.getAttribute("href").substring(1);
       const targetSection = document.getElementById(targetId);
       if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth" });
+        targetSection.scrollIntoView({ 
+        behavior: "smooth", 
+        block: "center"  // 垂直置中畫面
+      });
       }
     });
   }
