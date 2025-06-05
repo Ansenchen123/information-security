@@ -14,13 +14,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetId = this.getAttribute("href").substring(1);
       const targetSection = document.getElementById(targetId);
       if (targetSection) {
-        targetSection.scrollIntoView({ 
-        behavior: "smooth", 
-        block: "center"  // 垂直置中畫面
-      });
+        const isMobile = window.innerWidth <= 768; // 判斷是否為手機
+
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: isMobile ? "start" : "center" // 手機靠上，桌機置中
+        });
       }
     });
   }
+
 
   // 遊戲變數與元素
   const canvas = document.getElementById("bugGame");
