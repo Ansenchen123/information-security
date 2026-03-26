@@ -1,64 +1,115 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>資訊安全宣導</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Information Security Awareness Website</title>
+  <meta
+    name="description"
+    content="An interactive educational website about phishing, password hygiene, short-link risks, and everyday cybersecurity awareness."
+  />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <div class="mobile-header">
-      <h1>資訊安全宣導</h1>
-      <button id="menu-toggle" aria-label="開啟選單">☰</button>
+      <div>
+        <p class="eyebrow">Information Security Awareness</p>
+        <h1>Interactive Cybersecurity Learning Site</h1>
+      </div>
+      <button id="menu-toggle" aria-label="Toggle navigation menu">Menu</button>
     </div>
     <nav>
       <ul>
-        <li><a href="#about">關於資安</a></li>
-        <li><a href="#threats">常見威脅</a></li>
-        <li><a href="#protection">防範方法</a></li>
-        <li><a href="#shortlink-security">短網址風險</a></li>
-        <li><a href="#video">資安影片</a></li>
-        <li><a href="#phishing-trap">釣魚警示</a></li>
-        <li><a href="#game">小遊戲</a></li>
-        <li><a href="#sources">資料來源</a></li>
+        <li><a href="#about">Overview</a></li>
+        <li><a href="#threats">Threats</a></li>
+        <li><a href="#protection">Protection</a></li>
+        <li><a href="#shortlink-security">Short Links</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#phishing-trap">Trap Demo</a></li>
+        <li><a href="#game">Mini Game</a></li>
+        <li><a href="#sources">Sources</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+    <section class="hero-section">
+      <div class="hero-copy">
+        <p class="eyebrow">Student Project</p>
+        <h2>Turning security awareness into a more visual and memorable web experience</h2>
+        <p>
+          This project reframes cybersecurity education for everyday users through illustrations,
+          short explanations, an embedded explainer video, a phishing-style interaction demo,
+          and a lightweight browser game.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#about">Explore the site</a>
+          <a class="secondary-btn" href="#game">Play the game</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <p class="panel-title">Project focus</p>
+        <ul>
+          <li>Explain common cyber risks in plain language.</li>
+          <li>Use interaction to increase retention and attention.</li>
+          <li>Make awareness content feel less like a textbook page.</li>
+        </ul>
+      </div>
+    </section>
+
     <section id="about">
       <div class="content-row">
-        <img src="images/password.png" alt="密碼保護示意圖" class="content-img" />
+        <img src="images/password.png" alt="Password security illustration" class="content-img" />
         <div class="text-block">
-          <h2>關於資訊安全</h2>
-          <p>資訊安全（Information Security）是保護資料不被未授權存取、竄改或破壞的技術與實務。</p>
-          <p>核心原則包括機密性、完整性與可用性，是每位使用者都應具備的基本知識。</p>
+          <h2>Overview</h2>
+          <p>
+            Information security is not only a technical concern for specialists. It also depends
+            on the daily behavior of ordinary users, including password choices, link-clicking habits,
+            and the ability to recognize suspicious requests.
+          </p>
+          <p>
+            This website breaks cybersecurity awareness into several accessible topics so that users
+            can quickly understand practical risks and the actions they can take to reduce them.
+          </p>
         </div>
       </div>
     </section>
 
     <section id="threats">
       <div class="content-row">
-        <img src="images/phishing.png" alt="釣魚攻擊示意圖" class="content-img" />
+        <img src="images/phishing.png" alt="Phishing illustration" class="content-img" />
         <div class="text-block">
-          <h2>常見資安威脅</h2>
-          <p><strong>釣魚信件：</strong> 假冒合法單位傳送連結或附件，誘導用戶洩漏帳密。</p>
-          <p><strong>勒索病毒：</strong> 鎖定檔案後要求贖金，常經由漏洞或信件附件散播。</p>
+          <h2>Common Threats</h2>
+          <p>
+            <strong>Phishing:</strong>
+            Attackers impersonate trusted services such as banks, shopping platforms, schools,
+            or internal systems to steal passwords, verification codes, and personal data.
+          </p>
+          <p>
+            <strong>Weak or reused passwords:</strong>
+            Reusing the same password across different platforms creates a chain reaction:
+            one leaked service can expose multiple accounts.
+          </p>
+          <p>
+            <strong>Malicious links and downloads:</strong>
+            A normal-looking link or attachment may redirect users to fake pages or harmful downloads.
+          </p>
         </div>
       </div>
     </section>
 
     <section id="protection">
       <div class="content-row">
-        <img src="images/protection.png" alt="資安防護示意圖" class="content-img" />
+        <img src="images/protection.png" alt="Protection illustration" class="content-img" />
         <div class="text-block">
-          <h2>資安防護方法</h2>
+          <h2>Protection Tips</h2>
           <ul>
-            <li>使用複雜且唯一的密碼，並啟用兩步驟驗證</li>
-            <li>定期更新作業系統與防毒軟體</li>
-            <li>不點擊不明來源的連結或附件</li>
-            <li>加強資安意識教育，預防社交工程</li>
+            <li>Use strong, unique passwords and store them with a password manager.</li>
+            <li>Enable multi-factor authentication for important accounts.</li>
+            <li>Verify urgent login, payment, or profile-update requests before responding.</li>
+            <li>Preview suspicious short links before opening them.</li>
+            <li>Keep browsers, systems, and devices up to date.</li>
           </ul>
         </div>
       </div>
@@ -66,64 +117,84 @@
 
     <section id="shortlink-security">
       <div class="content-row">
-        <img src="images/shortlink.png" alt="短網址風險示意圖" class="content-img" />
+        <img src="images/shortlink.png" alt="Short link security illustration" class="content-img" />
         <div class="text-block">
-          <h2>短網址的資安風險</h2>
-          <p>短網址雖然方便分享，但可能被用來隱藏惡意網站，例如釣魚網頁、木馬下載或假冒服務頁。</p>
+          <h2>Why Short Links Can Be Risky</h2>
+          <p>
+            Short links are useful for sharing, but they hide the real destination.
+            That makes it harder for users to judge whether a site is trustworthy before clicking.
+          </p>
           <ul>
-            <li>無法從網址判斷實際連結位置</li>
-            <li>可能導向惡意網站或下載檔案</li>
-            <li>難以識別仿冒銀行或社群頁面</li>
+            <li>The real domain is hidden until after the click.</li>
+            <li>They often appear in promotions, direct messages, and social posts.</li>
+            <li>They can redirect to phishing pages, trackers, or malicious downloads.</li>
           </ul>
-          <p><strong>建議：</strong>遇到短網址時，建議先使用<a href="https://checkshorturl.com/" target="_blank">CheckShortURL</a> 等工具展開查看真實網址。</p>
+          <p>
+            A good habit is to inspect unknown short links with
+            <a href="https://checkshorturl.com/" target="_blank" rel="noreferrer">CheckShortURL</a>
+            or a similar preview tool.
+          </p>
         </div>
       </div>
     </section>
 
     <section id="video">
       <div class="content-row">
-        <iframe class="video-frame"
+        <iframe
+          class="video-frame"
           src="https://www.youtube.com/embed/vcnuLFXr3S4"
-          title="資訊安全宣導影片-短網址的安全性問題"
+          title="Cybersecurity awareness video"
           frameborder="0"
-          allowfullscreen></iframe>
+          allowfullscreen
+        ></iframe>
         <div class="text-block">
-          <h2>資訊安全宣導影片-短網址的安全性問題</h2>
-          <p>晉請見證，前有資安宣導影片</p>
-          <p><a href="https://youtu.be/vcnuLFXr3S4?si=k6BlwyumTLTZ4IYD" target="_blank">觀看原始影片</a></p>
+          <h2>Explainer Video</h2>
+          <p>
+            The embedded video reinforces the main ideas behind phishing risk and suspicious links,
+            making the site more useful for classroom or awareness-sharing scenarios.
+          </p>
+          <p>
+            <a href="https://youtu.be/vcnuLFXr3S4?si=k6BlwyumTLTZ4IYD" target="_blank" rel="noreferrer">
+              Watch on YouTube
+            </a>
+          </p>
         </div>
       </div>
     </section>
 
     <section id="phishing-trap">
       <div class="phishing-container">
-        <h2>釣魚連結</h2>
-        <button id="phishingBtn">不要按</button>
+        <h2>Phishing Trap Demo</h2>
+        <p>
+          This button simulates a suspicious interaction. Clicking it triggers a burst of automatic downloads
+          to remind users that seemingly harmless actions can have unexpected consequences.
+        </p>
+        <button id="phishingBtn">Try the demo</button>
       </div>
     </section>
 
     <section id="game">
       <div class="game-container">
-        <h2>小遊戲：逃離資安漏洞！</h2>
-        <p>你是一位工程師，試著躲避迎面而來的資安漏洞！(按下空白鍵跳躍)。</p>
-        <div id="scoreDisplay">分數：0</div>
-        <div id="highScoreDisplay">最高分數：0</div>
-        <button id="startGameBtn">開始遊戲</button>
+        <h2>Mini Game: Dodge the Bugs</h2>
+        <p>
+          Press the space bar on desktop or tap on mobile to jump over incoming bugs.
+          The game adds a playful memory anchor to an otherwise serious awareness topic.
+        </p>
+        <div id="scoreDisplay">Score: 0</div>
+        <div id="highScoreDisplay">High Score: 0</div>
+        <button id="startGameBtn">Start game</button>
         <canvas id="bugGame" width="600" height="200" style="display: none;"></canvas>
       </div>
     </section>
 
-
-
-
     <section id="sources">
       <div class="content-row">
         <div class="text-block">
-          <h2>資料來源</h2>
+          <h2>Sources</h2>
           <ul>
-            <li><a href="https://zh.wikipedia.org/zh-tw/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8" target="_blank">資訊安全 維基百科</a></li>
-            <li><a href="https://www.trendmicro.com/zh_tw/what-is/network-security/network-security-basics.html" target="_blank">趨勢科技 資安防護</a></li>
-            <li><a href="https://www.ncert.nat.gov.tw/" target="_blank">國家資通安全通報應變中心</a></li>
+            <li><a href="https://zh.wikipedia.org/zh-tw/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8" target="_blank" rel="noreferrer">Information security overview</a></li>
+            <li><a href="https://www.trendmicro.com/zh_tw/what-is/network-security/network-security-basics.html" target="_blank" rel="noreferrer">Network security basics</a></li>
+            <li><a href="https://www.ncert.nat.gov.tw/" target="_blank" rel="noreferrer">National CERT resources</a></li>
           </ul>
         </div>
       </div>
@@ -131,7 +202,7 @@
   </main>
 
   <footer>
-    <p>© 2025 資安宣導網站</p>
+    <p>2025 Information Security Awareness Website</p>
   </footer>
 
   <script src="js/script.js"></script>
