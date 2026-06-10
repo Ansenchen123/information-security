@@ -4,6 +4,12 @@
 
 This is a static, interactive education site that explains everyday information-security risks through plain-language sections, an embedded video, a simulated phishing interaction, and a small browser game.
 
+## Screenshots
+
+![Information Security homepage](docs/screenshots/home.png)
+
+![Information Security mini game demo](docs/screenshots/game-demo.png)
+
 ## Features
 
 - Security-awareness content in `index.html` covering password hygiene, phishing, malicious links, short-link risks, and practical protection tips.
