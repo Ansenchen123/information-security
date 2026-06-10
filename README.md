@@ -45,7 +45,7 @@ information-security/
 
 The phishing trap is a controlled local demonstration. It does not collect credentials or contact an external endpoint, but it intentionally triggers multiple local image downloads to illustrate why suspicious clicks can have unexpected effects.
 
-## 繁體中文摘要
+## 摘要
 
 - 本專案是一個靜態資安教育網站，主題包含密碼安全、釣魚攻擊、惡意連結與短網址風險。
 - 開頭提供線上展示連結，方便直接檢視網站成品。
